@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng nhập</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="signup">
+            <div class="signup__main">
+                <div class="signup__logo">
+                    <img src="https://code.ptit.edu.vn/2020/images/logo_ptit.png" alt="Logo">
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div class="signup__main__title">
+                            <p>Đăng nhập</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <form class="signup__main__form">
+                            <input type="hidden" name="_token">
+                            <label for="signup__username">Tên người dùng</label>
+                            <input type="text" name="username" id="signup__username" value="" autofocus
+                                class="input--active">
+                            <div class="signup__username__error__message"></div>
+
+                            <label for="signup__dob">Ngày sinh</label>
+                            <input type="date" name="dob" id="signup__dob" value="" class="input--active">
+                            <div class="signup__dob__error__message"></div>
+
+                            <label for="signup__student__id">Mã sinh viên</label>
+                            <input type="text" name="student__id" id="signup__student__id" class="input--active">
+                            <div class="signup__student__id__error__message"></div>
+
+                            <label for="signup__class">Lớp</label>
+                            <input type="text" name="class" id="signup__class" class="input--active">
+                            <div class="signup__class__error__message"></div>
+
+                            <button type="submit"><span>Đăng nhập</span></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
